@@ -1,0 +1,4 @@
+tests\initials
+ [x] Initials
+ [x] Initials multi characters
+

@@ -1,0 +1,21 @@
+{
+	"name": "anytizer/initials.php",
+	"description": "Generate name initials",
+	"type": "library",
+	"keywords": [
+		"initials",
+	],
+	"authors": [
+		{
+			"role": "Developer"
+		}
+	],
+	"minimum-stability": "stable",
+	"prefer-stable": true,
+	"require": {
+		"php": ">=7.0"
+	},
+	"autoload": {
+		"files": ["src/libraries/classes/common/class.initials.inc.php"]
+	}
+}
