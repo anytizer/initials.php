@@ -14,6 +14,7 @@ class initialsTest extends TestCase
     {
 		$initials = new initials();
 		$initials->length(1);
+		
 		$letters = $initials->get("Longer Frau");
 		$expect = "LF";
         
@@ -24,8 +25,20 @@ class initialsTest extends TestCase
     {
 		$initials = new initials();
 		$initials->length(3);
+		
 		$letters = $initials->get("Longer Frau");
 		$expect = "LONFRA";
+        
+		$this->assertEquals($expect, $letters);
+    }
+	
+	public function testInitialsDrawingTooManyCharacters()
+    {
+		$initials = new initials();
+		$initials->length(5);
+		
+		$letters = $initials->get("Lon Frau");
+		$expect = "LONFRAU";
         
 		$this->assertEquals($expect, $letters);
     }

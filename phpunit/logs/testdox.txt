@@ -1,4 +1,5 @@
 tests\initials
  [x] Initials
  [x] Initials multi characters
+ [x] Initials drawing too many characters
 
