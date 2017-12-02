@@ -3,3 +3,6 @@ tests\initials
  [x] Initials multi characters
  [x] Initials drawing too many characters
 
+tests\names
+ [x] Initials
+
