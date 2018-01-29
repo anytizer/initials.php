@@ -7,19 +7,19 @@ use PHPUnit\Framework\TestCase;
 
 class namesTest extends TestCase
 {
-	private $names;
+    private $names;
 
     public function setup()
     {
-		$this->names = new names();
+        $this->names = new names();
     }
 
     public function testInitials()
     {
-		$name = $this->names->parse("Jr. John Doe");
-		
-		$this->assertEquals("Jr.", $name->first);
-		$this->assertEquals("John", $name->middle);
-		$this->assertEquals("Doe", $name->last);
+        $name = $this->names->parse("Jr. John Doe");
+
+        $this->assertEquals("Jr.", $name->first);
+        $this->assertEquals("John", $name->middle);
+        $this->assertEquals("Doe", $name->last);
     }
 }

@@ -12,34 +12,34 @@ class initialsTest extends TestCase
 
     public function testInitials()
     {
-		$initials = new initials();
-		$initials->length(1);
-		
-		$letters = $initials->get("Longer Frau");
-		$expect = "LF";
-        
-		$this->assertEquals($expect, $letters);
+        $initials = new initials();
+        $initials->length(1);
+
+        $letters = $initials->get("Longer Frau");
+        $expect = "LF";
+
+        $this->assertEquals($expect, $letters);
     }
-	
-	public function testInitialsMultiCharacters()
+
+    public function testInitialsMultiCharacters()
     {
-		$initials = new initials();
-		$initials->length(3);
-		
-		$letters = $initials->get("Longer Frau");
-		$expect = "LONFRA";
-        
-		$this->assertEquals($expect, $letters);
+        $initials = new initials();
+        $initials->length(3);
+
+        $letters = $initials->get("Longer Frau");
+        $expect = "LONFRA";
+
+        $this->assertEquals($expect, $letters);
     }
-	
-	public function testInitialsDrawingTooManyCharacters()
+
+    public function testInitialsDrawingTooManyCharacters()
     {
-		$initials = new initials();
-		$initials->length(5);
-		
-		$letters = $initials->get("Lon Frau");
-		$expect = "LONFRAU";
-        
-		$this->assertEquals($expect, $letters);
+        $initials = new initials();
+        $initials->length(5);
+
+        $letters = $initials->get("Lon Frau");
+        $expect = "LONFRAU";
+
+        $this->assertEquals($expect, $letters);
     }
 }

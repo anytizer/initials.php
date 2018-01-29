@@ -1,9 +1,12 @@
 # initials.php
+
 Generate naming initials
 
     $initials = new initials();
 	$initials->length(1);
-    $name = $initials->get("Firstname Lastname"); // FL
+    $name = $initials->get("Firstname Lastname");
+
+Expect output: __FL__
 
 
 # Installation
