@@ -9,19 +9,22 @@ class initials
 	/**
 	 * @var int
 	 */
-    private $characters_count = 1;
+    private $characters_count;
 
     /**
      * Begin with determining how many characters to extract.
      */
     public function __construct()
 	{
+        $this->characters_count = 1;
 	}
-	
-	public function length($characters_count = 3): int
+    
+    /**
+     * Sets characters to extract per word
+     */
+	public function length($characters_count = 1)
     {
-        $this->characters_count = $characters_count;
-        return $characters_count;
+        $this->characters_count = (int)$characters_count;
     }
  
     /**
@@ -29,7 +32,8 @@ class initials
      */
     private function letter($word = ""): string
     {
-        $letters = strtoupper(substr($word, 0, $this->characters_count));
+        $characters_count = min(strlen($word), $this->characters_count);
+        $letters = strtoupper(substr($word, 0, $characters_count));
 
         return $letters;
     }

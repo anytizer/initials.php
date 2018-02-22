@@ -1,7 +1,9 @@
 tests\initials
  [x] Initials
- [x] Initials multi characters
- [x] Initials drawing too many characters
+ [x] Initials
+ [x] Initials 3 multi characters
+ [x] Initials 5 drawing too many characters
+ [x] Initials 15 drawing too many characters
 
 tests\names
  [x] Initials
