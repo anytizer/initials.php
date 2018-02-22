@@ -14,12 +14,21 @@ class namesTest extends TestCase
         $this->names = new names();
     }
 
-    public function testInitials()
+    public function testParse1()
     {
         $name = $this->names->parse("Jr. John Doe");
 
         $this->assertEquals("Jr.", $name->first);
         $this->assertEquals("John", $name->middle);
+        $this->assertEquals("Doe", $name->last);
+    }
+
+    public function testParse2()
+    {
+        $name = $this->names->parse("Jr. John Di Doe");
+
+        $this->assertEquals("Jr.", $name->first);
+        $this->assertEquals("John Di", $name->middle);
         $this->assertEquals("Doe", $name->last);
     }
 }

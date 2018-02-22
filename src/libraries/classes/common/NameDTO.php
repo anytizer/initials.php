@@ -1,20 +1,20 @@
 <?php
 namespace common;
 
-class name
+class NameDTO
 {
 	/**
 	 * @var string
 	 */
-	public $first;
+	public $first = "";
 
 	/**
 	 * @var string
 	 */
-	public $middle;
+	public $middle = "";
 
 	/**
 	 * @var string
 	 */
-	public $last;
+	public $last = "";
 }

@@ -6,5 +6,6 @@ tests\initials
  [x] Initials 15 drawing too many characters
 
 tests\names
- [x] Initials
+ [x] Parse 1
+ [x] Parse 2
 

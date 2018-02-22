@@ -1,5 +1,6 @@
 <?php
 namespace common;
+use common\NameDTO;
 
 /**
  * Read a name string and break it into First name, Middle name and Last name.
@@ -7,14 +8,12 @@ namespace common;
  */
 class names
 {
-    public function parse($full_name = "", $fix_case = false): name
+    public function parse($full_name = "", $fix_case = false): NameDTO
     {
         $names = explode(" ", $full_name);
 
-        $name = new name();
-        $name->first = "";
-        $name->middle = "";
-        $name->last = "";
+        $name = new NameDTO();
+
         # Assigning these empty values makes sure that each of the three parts exists.
 
         $words = count($names);
