@@ -18,32 +18,34 @@ class initials
 	{
 	}
 	
-	public function length($characters_count = 3)
+	public function length($characters_count = 3): int
     {
         $this->characters_count = $characters_count;
+        return $characters_count;
     }
-
-    /**
-     * Calculate the initials
-     */
-    public function get($string = "")
-    {
-        $words = explode(" ", $string);
-        $letters = array_map(array($this, "letter"), $words);
-
-        $phrase = implode("", $letters);
-
-        return $phrase;
-    }
-
+ 
     /**
      * Read an initial letter from a name's word
      */
-    private function letter($word = "")
+    private function letter($word = ""): string
     {
         $letters = strtoupper(substr($word, 0, $this->characters_count));
 
         return $letters;
+    }
+    
+    /**
+     * Calculate the initials
+     */
+    public function get($string = ""): string
+    {
+        $words = explode(" ", $string);
+        $letters = array_map(array($this, "letter"), $words);
+        $letters = array_map("strtoupper", $letters);
+
+        $phrase = implode("", $letters);
+
+        return $phrase;
     }
 }
 

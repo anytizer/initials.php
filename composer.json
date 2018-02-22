@@ -3,19 +3,19 @@
 	"description": "Generate name initials",
 	"type": "library",
 	"keywords": [
-		"initials",
+		"initials"
 	],
 	"authors": [
 		{
 			"role": "Developer"
 		}
 	],
-	"minimum-stability": "stable",
-	"prefer-stable": true,
 	"require": {
 		"php": ">=7.0"
 	},
 	"autoload": {
-		"files": ["src/libraries/classes/common/class.initials.inc.php"]
+		"psr-4": {
+			"common\\": "src/libraries/classes/common"
+		}
 	}
 }
