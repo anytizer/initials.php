@@ -1,0 +1,5 @@
+{
+    "require": {
+        "anytizer/initials.php": "dev-master"
+    }
+}

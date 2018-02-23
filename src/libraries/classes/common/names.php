@@ -11,6 +11,7 @@ class names
     public function parse($full_name = "", $fix_case = false): NameDTO
     {
         $names = explode(" ", $full_name);
+        $names = array_map("ucfirst", $names);
 
         $name = new NameDTO();
 

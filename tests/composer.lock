@@ -1,0 +1,50 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "7d019af08005e2c9749386f53e2633e4",
+    "packages": [
+        {
+            "name": "anytizer/initials.php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anytizer/initials.php.git",
+                "reference": "f830f04ec3830d2c8e744181e7a5778adb33b2bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anytizer/initials.php/zipball/f830f04ec3830d2c8e744181e7a5778adb33b2bf",
+                "reference": "f830f04ec3830d2c8e744181e7a5778adb33b2bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "common\\": "src/libraries/classes/common"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Generate name initials",
+            "keywords": [
+                "Initials"
+            ],
+            "time": "2018-02-22T23:49:16+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "anytizer/initials.php": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

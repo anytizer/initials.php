@@ -16,7 +16,7 @@ class namesTest extends TestCase
 
     public function testParse1()
     {
-        $name = $this->names->parse("Jr. John Doe");
+        $name = $this->names->parse("jr. john doe");
 
         $this->assertEquals("Jr.", $name->first);
         $this->assertEquals("John", $name->middle);
@@ -25,7 +25,7 @@ class namesTest extends TestCase
 
     public function testParse2()
     {
-        $name = $this->names->parse("Jr. John Di Doe");
+        $name = $this->names->parse("jr. john di doe");
 
         $this->assertEquals("Jr.", $name->first);
         $this->assertEquals("John Di", $name->middle);
