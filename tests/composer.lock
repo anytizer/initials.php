@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anytizer/initials.php.git",
-                "reference": "f830f04ec3830d2c8e744181e7a5778adb33b2bf"
+                "reference": "8a617da73d2c16643b0039e14e38490dd32193de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anytizer/initials.php/zipball/f830f04ec3830d2c8e744181e7a5778adb33b2bf",
-                "reference": "f830f04ec3830d2c8e744181e7a5778adb33b2bf",
+                "url": "https://api.github.com/repos/anytizer/initials.php/zipball/8a617da73d2c16643b0039e14e38490dd32193de",
+                "reference": "8a617da73d2c16643b0039e14e38490dd32193de",
                 "shasum": ""
             },
             "require": {
@@ -34,7 +34,7 @@
             "keywords": [
                 "Initials"
             ],
-            "time": "2018-02-22T23:49:16+00:00"
+            "time": "2018-02-23T00:03:57+00:00"
         }
     ],
     "packages-dev": [],
