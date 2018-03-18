@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace tests;
 
-require_once("vendor/autoload.php");
+require_once("./vendor/autoload.php");
 use common\names;
 
 $names = new names();

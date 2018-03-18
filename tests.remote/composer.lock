@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/anytizer/initials.php.git",
-                "reference": "8a617da73d2c16643b0039e14e38490dd32193de"
+                "reference": "9076a6c1d8da71d6203692aaf5bede9816d9bee7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/anytizer/initials.php/zipball/8a617da73d2c16643b0039e14e38490dd32193de",
-                "reference": "8a617da73d2c16643b0039e14e38490dd32193de",
+                "url": "https://api.github.com/repos/anytizer/initials.php/zipball/9076a6c1d8da71d6203692aaf5bede9816d9bee7",
+                "reference": "9076a6c1d8da71d6203692aaf5bede9816d9bee7",
                 "shasum": ""
             },
             "require": {
@@ -26,7 +26,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "common\\": "src/libraries/classes/common"
+                    "common\\": "src/common"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -34,7 +34,7 @@
             "keywords": [
                 "Initials"
             ],
-            "time": "2018-02-23T00:03:57+00:00"
+            "time": "2018-03-18T23:19:56+00:00"
         }
     ],
     "packages-dev": [],
