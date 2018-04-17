@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace tests;
 
 require_once("vendor/autoload.php");
-use common\names;
+use anytizer\names;
 
 $names = new names();
 $name = $names->parse("mr. john doe");

@@ -1,8 +1,8 @@
 <?php
 namespace tests;
 
-use common\name;
-use common\names;
+use anytizer\name;
+use anytizer\names;
 use PHPUnit\Framework\TestCase;
 
 class namesTest extends TestCase

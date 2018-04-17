@@ -10,7 +10,7 @@ Generate naming initials
 
 ## Usage Example - Initials
 
-    use common\initials;
+    use anytizer\initials;
 
     $initials = new initials();
 	$initials->length(1);
@@ -27,9 +27,9 @@ If name has more than 3 words, middle name is a comnination of words.
 
 Do not pass title, or it will become the first name.
 
-    use common\names;
+    use anytizer\names;
 
     $names = new names();
 	$name = $names->parse("Mr. John Di Doe");
 
-    print_r($names);
+    print_r($name);

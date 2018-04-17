@@ -1,7 +1,7 @@
 <?php
 namespace tests;
 
-use common\initials;
+use anytizer\initials;
 use PHPUnit\Framework\TestCase;
 
 class initialsTest extends TestCase

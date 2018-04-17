@@ -3,3 +3,4 @@
 /tests/vendor
 /tests.remote/vendor
 /tests.local/vendor
+/tests.remote/composer.lock
