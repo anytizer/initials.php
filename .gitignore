@@ -4,3 +4,4 @@
 /tests.remote/vendor
 /tests.local/vendor
 /tests.remote/composer.lock
+/docs
