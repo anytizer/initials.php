@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace tests;
 
-require_once("src/libraries/classes/anytizer/initials.php");
+require_once("src/anytizer/initials.php");
 use anytizer\initials;
 
 $initials = new initials();
