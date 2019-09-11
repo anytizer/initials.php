@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class initialsTest extends TestCase
 {
-    public function setup()
+    public function setup(): void
     {
     }
 

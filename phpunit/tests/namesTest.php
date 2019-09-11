@@ -9,7 +9,7 @@ class namesTest extends TestCase
 {
     private $names;
 
-    public function setup()
+    public function setup(): void
     {
         $this->names = new names();
     }
