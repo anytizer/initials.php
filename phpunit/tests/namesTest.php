@@ -1,7 +1,6 @@
 <?php
 namespace tests;
 
-use anytizer\name;
 use anytizer\names;
 use PHPUnit\Framework\TestCase;
 
@@ -29,6 +28,24 @@ class namesTest extends TestCase
 
         $this->assertEquals("Jr.", $name->first);
         $this->assertEquals("John Di", $name->middle);
+        $this->assertEquals("Doe", $name->last);
+    }
+
+    public function testParse3()
+    {
+        $name = $this->names->parse("Rein McDonald");
+
+        $this->assertEquals("Rein", $name->first);
+        $this->assertEquals("", $name->middle);
+        $this->assertEquals("McDonald", $name->last);
+    }
+
+    public function testParse4()
+    {
+        $name = $this->names->parse("David R Doe");
+
+        $this->assertEquals("David", $name->first);
+        $this->assertEquals("R", $name->middle);
         $this->assertEquals("Doe", $name->last);
     }
 }

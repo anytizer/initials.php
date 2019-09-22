@@ -1,11 +1,13 @@
-tests\initials
+initials (tests\initials)
  [x] Initials
  [x] Initials
  [x] Initials 3 multi characters
  [x] Initials 5 drawing too many characters
  [x] Initials 15 drawing too many characters
 
-tests\names
+names (tests\names)
  [x] Parse 1
  [x] Parse 2
+ [x] Parse 3
+ [x] Parse 4
 
